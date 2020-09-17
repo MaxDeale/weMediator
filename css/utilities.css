@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
+:root {
+  --primary: #442727;
+  --second: #eae7d9;
+  --third: #d2c6b2;
+  --fourth: #937d14;
+}
+
+.primaryText {
+  color: #442727;
+}
+
+.secondaryText {
+  color: #eae7d9;
+}
+
+.thirdText {
+  color: var(--fourth);
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover ~ .fas.chevron-right {
+  opacity: 0.9;
+  margin-left: 80px !important;
+}
+
+.primaryBtn,
+.primaryBg {
+  color: #fff;
+  background: var(--primary);
+}
+
+.primaryBtn:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+.secondaryBtn,
+.secondaryBg {
+  color: black;
+  background-color: var(--second);
+}
+
+.secondaryBtn:hover {
+  background: #333;
+  color: white;
+  border: 2px solid var(--fourth);
+}
+
+.thirdBtn,
+.thirdBg {
+  background: var(--fourth);
+  color: black;
+}
+
+.thirdBtn:hover {
+  background: var(--second);
+  color: #333;
+  border: 1px solid black;
+}
+
+/* flex items */
+
+.flexItems {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flexItems > div {
+  padding: 20px;
+}
+
+.flexColumns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  flex: 1;
+  justify-content: center;
+}
+
+.flexColumns .column .column1,
+.flexColumns .column .column2 {
+  height: 100%;
+  object-fit: cover;
+}
+
+.flexColumns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* NB!!!!! */
+}
+
+.flexColumns .column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  height: 700px !important;
+  padding-top: 70px;
+}
+
+.flexColumns .column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  justify-content: center;
+  border: 1px solid black;
+  height: 900px !important;
+  padding-top: 70px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.flexColumns .column1 img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+  border: 1px solid black;
+  height: 900px !important;
+  padding-top: 70px;
+}
+
+.flexColumns h2 {
+  font-size: 44px;
+  font-weight: 140;
+}
+
+.flexColumns h4 {
+  margin-bottom: 10px;
+}
+
+.flexColumns p {
+  margin: 20px 0;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+/* header section */
+
+.sectionHeader {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionHeader h2 {
+  font-size: 44px;
+  margin: 20px 0;
+}
+
+.sectionPadding {
+  padding: 20px 20px 40px;
+}
+
+.flexGrid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.flexGrid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px;
+}
+
+.flexReverse .row {
+  flex-direction: row-reverse;
+}

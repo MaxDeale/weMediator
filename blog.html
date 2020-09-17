@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo|News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af356b6923.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>weMediator Blog | Law & Mediation</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="thirdText topspan"> <i class="fas fa-book"></i>We</span
+          >Mediator
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#cases">Cases</a></li>
+            <li><a href="/index.html#blog">Blog</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="flexColumns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="/img/blog/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 secondaryBg">
+              <h2>Legal Matters In Hard Times</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i>Posted by
+                <strong>Alan Cumberbatch</strong> | 22 April 2020
+              </p>
+              <p>
+                With over 40 years of proffesional experience, our team is fully
+                equipped to advise you on all legal matters. In todays world it
+                can be very hard to find the right team for your businesses
+                legal needs. Come and meet with us in person to discuss your
+                specific legal requirements and we will recommend the necessary
+                steps for you to take one at a time...
+
+                <a href="/post.html" class="btn primaryBtn">
+                  Read More <i class="fas fa-chevron-right"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer thirdBg">
+      <div class="social">
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+        <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 weMediator</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //save navbar to variable
+      const navbar = document.getElementById("navbar");
+      //scrolled value
+      let scrolled = false;
+      //whenenver widnow scrolls,
+      window.onscroll = function () {
+        //when y offest goes past 600, the top class is added to navbar
+        if (window.pageYOffset > 600) {
+          navbar.classList.remove("top");
+          //if scrolled is true the transition is effect is triggered down y axis
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          //setting navbar back to normal
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 8260);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
